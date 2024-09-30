@@ -332,6 +332,7 @@ export default {
         '"Courier New"',
         "monospace",
       ],
+      body: ["Poppins"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -554,6 +555,7 @@ export default {
       min: "min-content",
       max: "max-content",
       fit: "fit-content",
+      height: "1000px",
     }),
     hueRotate: {
       0: "0deg",

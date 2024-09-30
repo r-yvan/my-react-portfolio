@@ -7,7 +7,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="bg-gray-900 text-white py-16 px-10">
+    <section className="bg-gray-900 text-white py-16 px-10 font-body">
       <h2 className="text-4xl font-bold text-center mb-8">Clients' Testimonies</h2>
       <div className="flex flex-wrap justify-center gap-12">
         {testimonials.map((testimonial, index) => (
