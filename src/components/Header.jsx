@@ -31,7 +31,9 @@ const Header = () => {
       />
       <div className="mx-auto px-4 py-20 relative z-10 min-h-screen">
         <div className="grid grid-cols-5 grid-rows-1 gap-10 mt-24 items-center">
-          <div className="col-end-3 w-96 h-96 rounded-2xl overflow-hidden mb-6 md:mb-0 md:mr-12">
+          <div className="bg-green-500 w-96 h-96 rounded-2xl -z-20 absolute left-80 top-36 rotate-90"></div>
+          <div className="border-4 border-white w-96 h-96 rounded-2xl absolute left-72 top-40 -z-10"></div>
+          <div className="col-end-3 w-96 h-96 rounded-2xl overflow-hidden mb-6 md:mb-0 md:mr-12 shadow-2xl">
             <img
               src={profile}
               alt="Rubuto Yvan"
