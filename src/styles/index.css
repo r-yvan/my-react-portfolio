@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 
-.z-custom-9 {
-    z-index: 9;
+.z-custom-5 {
+    z-index: -1;
+}
+
+.z-custom {
+
 }
 
 .shadow-custom-1 {

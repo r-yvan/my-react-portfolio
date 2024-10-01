@@ -8,12 +8,13 @@ const About = () => {
       className="relative bg-gray-950 text-white py-16 px-10 font-body bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${background})` }}
     >
+      <img src={background} alt="background" />
       <h2>
         About <span>Me</span>
       </h2>
       <div>
-        <div className="grid grid-cols-6 grid-rows-2">
-          <div className="col-start-2 col-end-3">
+        <div className="grid grid-cols-7 grid-rows-1">
+          <div className="col-start-3 col-end-5">
             <h5>
               <a href="https://git.io/typing-svg">
                 <img
@@ -31,11 +32,11 @@ const About = () => {
               volutpat urna, sed viverra arcu odio in justo.
             </p>
           </div>
-          <div className="col-start-3 col-end-4">
+          <div className="col-start-5 col-end-7">
+            <div className="absolute bg-green-400 w-80 h-80 right-80"></div>
             <div className=""></div>
-            <div className="relative w-80 h-80 right-9"></div>
-            <div>
-              <img src={profile} alt="Rubuto Yvan" />
+            <div className="w-80 h-80 overflow-hidden rounded-2xl">
+              <img className="z-10" src={profile} alt="Rubuto Yvan" />
             </div>
           </div>
         </div>
