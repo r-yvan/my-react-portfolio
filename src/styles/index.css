@@ -6,3 +6,7 @@
 .z-custom-9 {
     z-index: 9;
 }
+
+.shadow-custom-1 {
+    box-shadow: inset #22c25d;
+}

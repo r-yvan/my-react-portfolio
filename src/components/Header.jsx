@@ -15,14 +15,18 @@ const Header = () => {
     >
       <nav className="absolute top-0 left-0 right-0 p-5 z-10">
         <ul className="flex justify-center items-center space-x-6 text-lg">
-          <li className="font-light duration-200 ease-out hover:text-green-400">Home</li>
+          <li className="font-light duration-200 ease-out hover:text-green-400">
+            Home
+          </li>
           <li className="font-light duration-200 ease-out hover:text-green-400">
             About Me
           </li>
           <li className="font-light duration-200 ease-out hover:text-green-400">
             Education
           </li>
-          <li className="font-light duration-200 ease-out hover:text-green-400">Skills</li>
+          <li className="font-light duration-200 ease-out hover:text-green-400">
+            Skills
+          </li>
           <li className="font-light duration-200 ease-out hover:text-green-400">
             Projects
           </li>
@@ -74,23 +78,23 @@ const Header = () => {
         </div>
       </div>
       <div className="grid grid-cols-7 grid-rows-1 gap-8">
-        <div className="flex justify-center items-center flex-col col-start-3 col-end-4 border-2 border-gray-400 px-4 py-4 bg-white bg-opacity-10 backdrop-filter backdrop-blur-3xl rounded-2xl">
+        <div className="flex justify-center items-center flex-col col-start-3 col-end-4 border-2 border-gray-400 px-4 py-4 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl">
           <h1 className="text-7xl items-center text-green-400">1+</h1>
           <p className="opacity-70 font-light pt-3">Years</p>
           <p>Experience</p>
         </div>
-        <div className="flex justify-center flex-col items-center col-start-4 col-end-5 border-2 border-gray-400 px-10 py-10 bg-white bg-opacity-10 backdrop-filter backdrop-blur-3xl rounded-2xl border-1 border-gray-400">
+        <div className="flex justify-center flex-col items-center col-start-4 col-end-5 border-2 px-10 py-10 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl border-1 border-gray-400">
           <h1 className="text-7xl items-center text-green-400">21+</h1>
           <p className="opacity-70 font-light pt-3">Github</p>
           <p className="font-bold">Repositories</p>
         </div>
-        <div className="flex justify-center flex-col items-center col-start-5 col-end-6 border-2 border-gray-400 px-4 py-4 bg-white bg-opacity-10 backdrop-filter backdrop-blur-3xl rounded-2xl">
+        <div className="flex justify-center flex-col items-center col-start-5 col-end-6 border-2 border-gray-400 px-4 py-4 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl">
           <h1 className="text-7xl text-green-400">11+</h1>
           <p className="opacity-70 font-light pt-3">Friendly</p>
           <p className="font-bold">Connections</p>
         </div>
       </div>
-      <div className="flex justify-center pt-16">
+      <div className="flex justify-center pt-10">
         <button className="px-36 py-3 rounded-full bg-green-600 z-20 font-bold">
           Connect
         </button>
