@@ -164,14 +164,14 @@ const Header = () => {
             My <span className="text-green-400">Education</span>
           </h2>{" "}
         </div>
-        <div className="grid grid-cols-5 grid-rows-2 gap-10 z-10">
+        <div className="grid grid-cols-[200px_440px_440px_440px_200px] grid-rows-2 gap-10 z-10">
           <div className="col-start-2 row-end-2 flex flex-row items-center">
             <div>
               <img src={achievement} alt="" />
             </div>
-            <div className="ml-8">
+            <div className="ml-8 flex flex-col justify-center items-center">
               <p className="text-green-400 font-bold text-lg">
-                Blockchain Development
+                MERN Stack Web Dev 
               </p>
               <p>Rwanda Coding Academy</p>
               <p>2024 - 2025</p>
@@ -181,9 +181,9 @@ const Header = () => {
             <div>
               <img src={achievement} alt="" />
             </div>
-            <div className="ml-8">
+            <div className="ml-8 flex flex-col justify-center items-center">
               <p className="text-green-400 font-bold text-lg">
-                Blockchain Development
+                Full Stack Web Dev
               </p>
               <p>Rwanda Coding Academy</p>
               <p>2024 - 2025</p>
@@ -193,9 +193,9 @@ const Header = () => {
             <div>
               <img src={achievement} alt="" />
             </div>
-            <div className="ml-8">
+            <div className="ml-8 flex flex-col justify-center items-center">
               <p className="text-green-400 font-bold text-lg">
-                Blockchain Development
+                Software Engineering
               </p>
               <p>Rwanda Coding Academy</p>
               <p>2024 - 2025</p>
@@ -205,9 +205,9 @@ const Header = () => {
             <div>
               <img src={achievement} alt="" />
             </div>
-            <div className="ml-8">
+            <div className="ml-8 flex flex-col justify-center items-center">
               <p className="text-green-400 font-bold text-lg">
-                Blockchain Development
+                Blockchain Dev
               </p>
               <p>Rwanda Coding Academy</p>
               <p>2024 - 2025</p>
@@ -217,9 +217,9 @@ const Header = () => {
             <div>
               <img src={achievement} alt="" />
             </div>
-            <div className="ml-8">
+            <div className="ml-8 flex flex-col justify-center items-center">
               <p className="text-green-400 font-bold text-lg">
-                Blockchain Development
+                Graphic Design
               </p>
               <p>Rwanda Coding Academy</p>
               <p>2024 - 2025</p>
@@ -229,7 +229,7 @@ const Header = () => {
             <div>
               <img src={achievement} alt="" />
             </div>
-            <div className="ml-8">
+            <div className="ml-8 flex flex-col items-center">
               <p className="text-green-400 font-bold text-lg">
                 Blockchain Development
               </p>
