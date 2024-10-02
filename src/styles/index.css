@@ -7,10 +7,26 @@
     z-index: -1;
 }
 
-.z-custom {
-
-}
-
 .shadow-custom-1 {
     box-shadow: inset #22c25d;
+}
+
+.backdrop-iri-seriye {
+    backdrop-filter: blur(500px);
+}
+
+.width-custom-1 {
+    width: 400px;
+}
+
+.width-custom-2 {
+    width: 430px;
+}
+
+.height-custom-1 {
+    height: 400px;
+}
+
+.height-custom-2 {
+    height: 430px;
 }
