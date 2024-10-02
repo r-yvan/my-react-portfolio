@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../assets/background.png";
+import background from "../assets/anotherBanga.png";
 import profile from "../assets/me.png";
 import netflixLogo from "../assets/netflix.png";
 import googleLogo from "../assets/google.png";
@@ -55,7 +55,7 @@ const Header = () => {
       <img
         src={background}
         alt="background"
-        className="absolute top-0 left-0 w-full h-full object-cover opacity-100 z-0"
+        className="absolute -top-40 left-0 w-full h-full object-cover opacity-100 blur-3xl z-0"
       />
       <div className="border-b-4 border-gray-500 pb-20">
         <div className="mx-auto px-4 py-20 relative z-10">
@@ -158,26 +158,26 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center pt-10 border-gray-500 border-opacity-20 border-b-4">
+      <div className="flex flex-col justify-center pt-10 border-gray-500 border-opacity-20 border-b-4 pb-24">
         <div className="flex justify-center z-10 mb-20">
           <h2 className="text-6xl font-bold">
             My <span className="text-green-400">Education</span>
           </h2>{" "}
         </div>
-        <div className="grid grid-cols-[200px_440px_440px_440px_200px] grid-rows-2 gap-10 z-10">
-          <div className="col-start-2 row-end-2 flex flex-row items-center">
+        <div className="grid grid-cols-[200px_440px_440px_440px_200px] grid-rows-2 gap-x-5 gap-y-5 z-10">
+          <div className="col-start-2 row-end-2 flex flex-row items-center p-8 duration-200 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg hover:border-white rounded-2xl hover:border-opacity-50">
             <div>
               <img src={achievement} alt="" />
             </div>
             <div className="ml-8 flex flex-col justify-center items-center">
               <p className="text-green-400 font-bold text-lg">
-                MERN Stack Web Dev 
+                MERN Stack Web Dev
               </p>
               <p>Rwanda Coding Academy</p>
               <p>2024 - 2025</p>
             </div>
           </div>
-          <div className="col-start-3 col-end-4 row-end-2 flex flex-row items-center">
+          <div className="col-start-3 col-end-4 row-end-2 flex flex-row items-center p-8 duration-200 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg hover:border-white rounded-2xl hover:border-opacity-50">
             <div>
               <img src={achievement} alt="" />
             </div>
@@ -189,7 +189,7 @@ const Header = () => {
               <p>2024 - 2025</p>
             </div>
           </div>
-          <div className="col-start-4 col-end-5 row-end-2 flex flex-row items-center">
+          <div className="col-start-4 col-end-5 row-end-2 flex flex-row items-center p-8 duration-200 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg hover:border-white rounded-2xl hover:border-opacity-50">
             <div>
               <img src={achievement} alt="" />
             </div>
@@ -201,31 +201,27 @@ const Header = () => {
               <p>2024 - 2025</p>
             </div>
           </div>
-          <div className="col-start-2 col-end-3 flex flex-row items-center">
+          <div className="col-start-2 col-end-3 flex flex-row items-center p-8 duration-200 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg hover:border-white rounded-2xl hover:border-opacity-50">
             <div>
               <img src={achievement} alt="" />
             </div>
             <div className="ml-8 flex flex-col justify-center items-center">
-              <p className="text-green-400 font-bold text-lg">
-                Blockchain Dev
-              </p>
+              <p className="text-green-400 font-bold text-lg">Blockchain Dev</p>
               <p>Rwanda Coding Academy</p>
               <p>2024 - 2025</p>
             </div>
           </div>
-          <div className="col-start-3 col-end-4 flex flex-row items-center">
+          <div className="col-start-3 col-end-4 flex flex-row items-center p-8 duration-200 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg hover:border-white rounded-2xl hover:border-opacity-50">
             <div>
               <img src={achievement} alt="" />
             </div>
             <div className="ml-8 flex flex-col justify-center items-center">
-              <p className="text-green-400 font-bold text-lg">
-                Graphic Design
-              </p>
+              <p className="text-green-400 font-bold text-lg">Graphic Design</p>
               <p>Rwanda Coding Academy</p>
               <p>2024 - 2025</p>
             </div>
           </div>
-          <div className="col-start-4 col-end-5 flex flex-row items-center">
+          <div className="col-start-4 col-end-5 flex flex-row items-center p-8 duration-200 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg hover:border-white rounded-2xl hover:border-opacity-50">
             <div>
               <img src={achievement} alt="" />
             </div>
