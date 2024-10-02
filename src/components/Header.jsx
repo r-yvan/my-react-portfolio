@@ -120,8 +120,8 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-col justify-center pt-10 ">
-        <div className="flex justify-center z-10 mb-24">
+      <div className="flex flex-col justify-center pt-10 border-gray-500 border-opacity-20 border-b-4">
+        <div className="flex justify-center z-10 mb-20">
           <h2 className="text-6xl font-bold">
             About <span className="text-green-400">Me</span>
           </h2>
@@ -131,7 +131,7 @@ const Header = () => {
             <h5>
               <a href="https://git.io/typing-svg">
                 <img
-                  src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=50&duration=4000&pause=1000&color=FFFFFF&width=1000&height=100&lines=Hello+There+I'm+Rubuto+Yvan;I'+m+a+FullStack+Developer"
+                  src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=50&duration=4000&pause=1000&color=FFFFFF&width=1000&height=100&lines=Hello+There+I'm+Rubuto+Yvan;I'+m+a+FullStack+Developer;"
                   alt="Typing SVG"
                 />
               </a>
@@ -154,6 +154,39 @@ const Header = () => {
             <div className="w-80 h-80 col-start-2 row-start-2 overflow-hidden rounded-2xl z-20">
               <img className="" src={profile} alt="Rubuto Yvan" />
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col justify-center pt-10 border-gray-500 border-opacity-20 border-b-4">
+        <div className="flex justify-center z-10 mb-20">
+          <h2 className="text-6xl font-bold">
+            My <span className="text-green-400">Education</span>
+          </h2>{" "}
+        </div>
+        <div className="grid grid-cols-5 grid-rows-2 z-10">
+          <div className="col-start-2 row-end-2">
+            <div></div>
+            <div></div>
+          </div>
+          <div className="col-start-3 col-end-4 row-end-2">
+            <div></div>
+            <div></div>
+          </div>
+          <div className="col-start-4 col-end-5 row-end-2">
+            <div></div>
+            <div></div>
+          </div>
+          <div className="col-start-2 col-end-3">
+            <div></div>
+            <div></div>
+          </div>
+          <div className="col-start-3 col-end-4">
+            <div></div>
+            <div></div>
+          </div>
+          <div className="col-start-4 col-end-5">
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>
