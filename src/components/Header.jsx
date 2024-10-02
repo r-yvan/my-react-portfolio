@@ -1,11 +1,12 @@
 import React from "react";
 import background from "../assets/background.png";
-import profile from "../assets/me.png"; // Replace with the actual path to your profile image
-// import netflixLogo from '../assets/netflix.png'; // Replace with the actual path to the Netflix logo
-// import googleLogo from '../assets/google.png'; // Replace with the actual path to the Google logo
-// import paypalLogo from '../assets/paypal.png'; // Replace with the actual path to the PayPal logo
-// import skypeLogo from '../assets/skype.png'; // Replace with the actual path to the Skype logo
-// import amazonLogo from '../assets/amazon.png'; // Replace with the actual path to the Amazon logo
+import profile from "../assets/me.png";
+import netflixLogo from "../assets/netflix.png";
+import googleLogo from "../assets/google.png";
+import paypalLogo from "../assets/paypal.png";
+import skypeLogo from "../assets/skype.png";
+import amazonLogo from "../assets/amazon.png";
+import achievement from "../assets/achievement.png";
 
 const Header = () => {
   const skills = [
@@ -88,13 +89,13 @@ const Header = () => {
                 lacus lorem volutpat urna, sed viverra arcu odio in justo.
               </p>
             </div>
-            <div className="flex justify-center items-center flex-wrap gap-8 mt-12">
-              {/* <img src={netflixLogo} alt="Netflix" className="h-8" /> */}
-              {/* <img src={googleLogo} alt="Google" className="h-8" /> */}
-              {/* <img src={paypalLogo} alt="PayPal" className="h-8" /> */}
-              {/* <img src={skypeLogo} alt="Skype" className="h-8" /> */}
-              {/* <img src={amazonLogo} alt="Amazon" className="h-8" /> */}
-            </div>
+          </div>
+          <div className="flex justify-center items-center flex-wrap gap-8 mt-12">
+            <img src={netflixLogo} alt="Netflix" className="h-8" />
+            <img src={googleLogo} alt="Google" className="h-8" />
+            <img src={paypalLogo} alt="PayPal" className="h-8" />
+            <img src={skypeLogo} alt="Skype" className="h-8" />
+            <img src={amazonLogo} alt="Amazon" className="h-8" />
           </div>
         </div>
         <div className="grid grid-cols-7 grid-rows-1 gap-8">
@@ -163,30 +164,78 @@ const Header = () => {
             My <span className="text-green-400">Education</span>
           </h2>{" "}
         </div>
-        <div className="grid grid-cols-5 grid-rows-2 z-10">
-          <div className="col-start-2 row-end-2">
-            <div></div>
-            <div></div>
+        <div className="grid grid-cols-5 grid-rows-2 gap-10 z-10">
+          <div className="col-start-2 row-end-2 flex flex-row items-center">
+            <div>
+              <img src={achievement} alt="" />
+            </div>
+            <div className="ml-8">
+              <p className="text-green-400 font-bold text-lg">
+                Blockchain Development
+              </p>
+              <p>Rwanda Coding Academy</p>
+              <p>2024 - 2025</p>
+            </div>
           </div>
-          <div className="col-start-3 col-end-4 row-end-2">
-            <div></div>
-            <div></div>
+          <div className="col-start-3 col-end-4 row-end-2 flex flex-row items-center">
+            <div>
+              <img src={achievement} alt="" />
+            </div>
+            <div className="ml-8">
+              <p className="text-green-400 font-bold text-lg">
+                Blockchain Development
+              </p>
+              <p>Rwanda Coding Academy</p>
+              <p>2024 - 2025</p>
+            </div>
           </div>
-          <div className="col-start-4 col-end-5 row-end-2">
-            <div></div>
-            <div></div>
+          <div className="col-start-4 col-end-5 row-end-2 flex flex-row items-center">
+            <div>
+              <img src={achievement} alt="" />
+            </div>
+            <div className="ml-8">
+              <p className="text-green-400 font-bold text-lg">
+                Blockchain Development
+              </p>
+              <p>Rwanda Coding Academy</p>
+              <p>2024 - 2025</p>
+            </div>
           </div>
-          <div className="col-start-2 col-end-3">
-            <div></div>
-            <div></div>
+          <div className="col-start-2 col-end-3 flex flex-row items-center">
+            <div>
+              <img src={achievement} alt="" />
+            </div>
+            <div className="ml-8">
+              <p className="text-green-400 font-bold text-lg">
+                Blockchain Development
+              </p>
+              <p>Rwanda Coding Academy</p>
+              <p>2024 - 2025</p>
+            </div>
           </div>
-          <div className="col-start-3 col-end-4">
-            <div></div>
-            <div></div>
+          <div className="col-start-3 col-end-4 flex flex-row items-center">
+            <div>
+              <img src={achievement} alt="" />
+            </div>
+            <div className="ml-8">
+              <p className="text-green-400 font-bold text-lg">
+                Blockchain Development
+              </p>
+              <p>Rwanda Coding Academy</p>
+              <p>2024 - 2025</p>
+            </div>
           </div>
-          <div className="col-start-4 col-end-5">
-            <div></div>
-            <div></div>
+          <div className="col-start-4 col-end-5 flex flex-row items-center">
+            <div>
+              <img src={achievement} alt="" />
+            </div>
+            <div className="ml-8">
+              <p className="text-green-400 font-bold text-lg">
+                Blockchain Development
+              </p>
+              <p>Rwanda Coding Academy</p>
+              <p>2024 - 2025</p>
+            </div>
           </div>
         </div>
       </div>
