@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header";
-import About from "./About";
 import Projects from "./Projects";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
@@ -11,7 +10,6 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <About />
       <Projects />
       <Testimonials />
       <Contact />
