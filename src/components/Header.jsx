@@ -55,21 +55,19 @@ const Header = () => {
       <img
         src={background}
         alt="background"
-        className="absolute -top-40 left-0 w-full h-full object-cover opacity-100 blur-3xl z-0"
+        className="absolute -top-40 left-0 w-full h-full object-cover opacity-80 blur-3xl z-0"
       />
       <div className="border-b-4 border-gray-500 pb-20">
         <div className="mx-auto px-4 py-20 relative z-10">
-          <div className="grid grid-cols-5 grid-rows-1 gap-10 mt-24 items-center">
-            <div className="bg-green-500 w-80 h-80 rounded-2xl -z-20 absolute left-80 top-36 rotate-90"></div>
-            <div className="border-4 border-white w-80 h-80 rounded-2xl absolute left-72 top-40 -z-10"></div>
-            <div className="col-end-3 w-80 h-80 rounded-2xl overflow-hidden mb-6 md:mb-0 md:mr-12 shadow-2xl">
-              <img
-                src={profile}
-                alt="Rubuto Yvan"
-                className="w-full h-full object-cover"
-              />
+          <div className="grid grid-cols-5 grid-rows-1 gap-32 mt-24 items-center">
+            <div className="col-start-2 col-end-3 grid grid-cols-10 grid-rows-[35px_35px_35px_35px_35px_35px_35px_35px_35px_35px_35px] z-20">
+              <div className="w-72 h-72 bg-green-400 rounded-2xl row-start-1 col-start-3"></div>
+              <div className="w-72 h-72 border-white border-4 rounded-2xl ml-5 mt-5"></div>
+              <div className="w-80 h-80 col-start-2 row-start-2 overflow-hidden rounded-2xl z-20">
+                <img className="" src={profile} alt="Rubuto Yvan" />
+              </div>
             </div>
-            <div className="col-start-3 col-span-2 text-center md:text-left md:ml-12">
+            <div className="col-start-3 col-span-3 text-center md:text-left md:ml-12">
               <h5 className="text-2xl md:text-4xl font-bold">
                 <a href="https://git.io/typing-svg">
                   <img
@@ -158,7 +156,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center pt-10 border-gray-500 border-opacity-20 border-b-4 pb-24">
+      <div className="flex flex-col justify-center pt-10 pb-24">
         <div className="flex justify-center z-10 mb-20">
           <h2 className="text-6xl font-bold">
             My <span className="text-green-400">Education</span>
@@ -231,6 +229,220 @@ const Header = () => {
               </p>
               <p>Rwanda Coding Academy</p>
               <p>2024 - 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col items-center bg-black z-20 rounded-3xl m-4">
+        <div className="flex justify-center mb-20 z-10">
+          <h2 className="text-6xl font-bold text-green-400">Skills</h2>{" "}
+        </div>
+        <div className="grid grid-cols-[600px_300px_300px_300px_600px] gap-5">
+          <div className="col-start-2 col-end-3 flex flex-col bg-white bg-opacity-10 backdrop-blur-2xl p-2 border-2 border-white border-opacity-10 rounded-2xl">
+            <div className="flex justify-center font-bold text-3xl mt-2 mb-5">
+              <h1>
+                <span className="text-green-400">Front</span>end
+              </h1>
+            </div>
+            <div className="flex flex-col">
+              <div className="py-2 px-2 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="py-2 px-2 duration-75 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="py-2 px-2 duration-75 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="py-2 px-2 duration-75 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-start-3 col-end-4 flex flex-col bg-white bg-opacity-10 backdrop-blur-2xl p-2 border-2 border-white border-opacity-10 rounded-2xl">
+            <div className="flex justify-center font-bold text-3xl mt-2 mb-5">
+              <h1>
+                Back<span className="text-green-400">end</span>
+              </h1>
+            </div>
+            <div className="flex flex-col">
+              <div className="py-2 px-2 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="py-2 px-2 duration-75 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="py-2 px-2 duration-75 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="py-2 px-2 duration-75 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-start-4 col-end-5 flex flex-col bg-white bg-opacity-10 backdrop-blur-2xl p-2 border-2 border-white border-opacity-10 rounded-2xl">
+            <div className="flex justify-center font-bold text-3xl mt-2 mb-5">
+              <h1>
+                Others
+              </h1>
+            </div>
+            <div className="flex flex-col">
+              <div className="py-2 px-2 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="py-2 px-2 duration-75 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="py-2 px-2 duration-75 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="py-2 px-2 duration-75 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+                <div className="flex flex-row pl-1 items-center">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <img
+                        src={achievement}
+                        alt="achievement"
+                        className="w-8"
+                      />
+                    </div>
+                    <div className="pl-3">React JS</div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
