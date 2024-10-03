@@ -7,6 +7,7 @@ import paypalLogo from "../assets/paypal.png";
 import skypeLogo from "../assets/skype.png";
 import amazonLogo from "../assets/amazon.png";
 import achievement from "../assets/achievement.png";
+import temp from "../assets/temp.jpg";
 import Skills from "./Skills";
 
 const Header = () => {
@@ -27,6 +28,26 @@ const Header = () => {
       list: ["Node JS", "Django", "Spring Boot", "MongoDB", "PHP"],
     },
     { category: "Others", list: ["Figma", "Photoshop", "Illustrator"] },
+  ];
+
+  const projects = [
+    {
+      title: "React Native Project",
+      description: "Lorem ipsum dolor sit amet...",
+    },
+    {
+      title: "React Native Project",
+      description: "Lorem ipsum dolor sit amet...",
+    },
+    {
+      title: "React Native Project",
+      description: "Lorem ipsum dolor sit amet...",
+    },
+  ];
+
+  const testimonials = [
+    { name: "John Doe", comment: "Great Developer!", image: "john-image.png" },
+    { name: "Mike Peter", comment: "Amazing work!", image: "mike-image.png" },
   ];
 
   return (
@@ -176,7 +197,7 @@ const Header = () => {
               <p>2024 - 2025</p>
             </div>
           </div>
-          <div className="col-start-3 col-end-4 row-end-2 flex flex-row items-center p-8 duration-200 border-2 border-green-400 border-opacity-0 hover:border-opacity-100ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg rounded-2xl">
+          <div className="col-start-3 col-end-4 row-end-2 flex flex-row items-center p-8 duration-200 border-2 border-green-400 border-opacity-0 hover:border-opacity-100 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg rounded-2xl">
             <div>
               <img src={achievement} alt="" />
             </div>
@@ -220,7 +241,7 @@ const Header = () => {
               <p>2024 - 2025</p>
             </div>
           </div>
-          <div className="col-start-4 col-end-5 flex flex-row items-center p-8 duration-200 border-2 border-green-400 border-opacity-0 hover:border-opacity-100 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg hover:border-white rounded-2xl">
+          <div className="col-start-4 col-end-5 flex flex-row items-center p-8 duration-200 border-2 border-green-400 border-opacity-0 hover:border-opacity-100 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg rounded-2xl">
             <div>
               <img src={achievement} alt="" />
             </div>
@@ -234,7 +255,53 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <Skills/>
+      <Skills />
+      <div className="border-b-4 pb-10 pt-10 border-gray-500 border-opacity-50 z-30">
+        <div className="flex justify-center z-20">
+          <h2 className="text-4xl font-bold mb-20 z-20">
+            My <span className="text-green-400">Projects</span>
+          </h2>
+        </div>
+        <div className="flex flex-row justify-center gap-10 start-2 z-20">
+          {projects.map((project, index) => (
+            <div
+              className="flex flex-col basis-80 bg-white bg-opacity-10 backdrop-blur-3xl border-2 border-white border-opacity-10 duration-200 ease-out hover:scale-95 hover:drop-shadow-2xl hover:shadow-green-400 hover:shadow-2xl hover:border-green-400 hover:border-opacity-100 rounded-2xl p-3 shadow-md z-20"
+              key={index}
+            >
+              <div className="w-72 rounded-xl overflow-hidden mb-4">
+                <img src={temp} alt="" />
+              </div>
+              <div className="flex flex-col pl-3 border-l-4 border-green-400">
+                <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
+                <p className="text-gray-400">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <h2 className="text-4xl font-bold text-center mb-8">
+          <span className="text-green-400">Clients'</span> Testimonies
+        </h2>
+        <div className="flex flex-wrap justify-center gap-12">
+          {testimonials.map((testimonial, index) => (
+            <div
+              className="bg-gray-800 p-8 rounded shadow-lg w-64 text-center"
+              key={index}
+            >
+              <img
+                src={`./assets/${testimonial.image}`}
+                alt={testimonial.name}
+                className="mx-auto rounded-full w-24 h-24 mb-4"
+              />
+              <p className="text-lg font-semibold mb-2">{testimonial.name}</p>
+              <p className="text-gray-400">{testimonial.comment}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </header>
   );
 };
