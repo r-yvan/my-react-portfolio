@@ -69,8 +69,10 @@ const Header = () => {
           <li className="font-light duration-200 ease-out hover:text-green-400">
             Skills
           </li>
-          <li className="font-light duration-200 ease-out hover:text-green-400">
-            Projects
+          <li>
+            <p className="font-light hover:text-green-400" href="">
+              Projects
+            </p>
           </li>
         </ul>
       </nav>
@@ -80,20 +82,23 @@ const Header = () => {
         className="absolute top-0 left-0 w-full h-full object-cover opacity-60 blur-3xl z-0"
       />
       <div className="border-b-4 border-gray-500 pb-20">
-        <div className="mx-auto px-4 py-20 relative z-10">
-          <div className="grid grid-cols-5 grid-rows-1 gap-32 mt-24 items-center">
-            <div className="col-start-2 col-end-3 grid grid-cols-10 grid-rows-[35px_35px_35px_35px_35px_35px_35px_35px_35px_35px_35px] z-20">
+        <div className="flex flex-col relative px-4 py-20 z-10">
+          <div className="flex flex-row justify-center gap-10 mt-24">
+            <div className="w-96 h-96"></div>
+            <div className="w-96 h-96"></div>
+            <div className="w-96 h-96"></div>
+            <div className="grid grid-cols-[35px_35px_35px_35px_35px_35px_35px_35px_35px_35px_35px] grid-rows-[35px_35px_35px_35px_35px_35px_35px_35px_35px_35px_35px] z-20">
               <div className="w-72 h-72 bg-green-400 rounded-2xl row-start-1 col-start-3"></div>
               <div className="w-72 h-72 border-white border-4 rounded-2xl ml-5 mt-5"></div>
-              <div className="w-80 h-80 col-start-2 row-start-2 overflow-hidden rounded-2xl z-20">
+              <div className="w-72 h-72 col-start-2 row-start-2 overflow-hidden rounded-2xl z-20">
                 <img className="" src={profile} alt="Rubuto Yvan" />
               </div>
             </div>
-            <div className="col-start-3 col-span-3 text-center md:text-left md:ml-12">
-              <h5 className="text-2xl md:text-4xl font-bold">
+            <div className="">
+              <h5 className="text-2xl font-bold">
                 <a href="https://git.io/typing-svg">
                   <img
-                    src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=60&duration=4000&pause=1000&color=FFFFFF&width=1000&height=100&lines=Hello+There+I'm+Rubuto+Yvan;I'+m+a+FullStack+Developer"
+                    src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=40&duration=4000&pause=1000&color=FFFFFF&width=1000&height=100&lines=Hello+There+I'm+Rubuto+Yvan;I'+m+a+FullStack+Developer"
                     alt="Typing SVG"
                   />
                 </a>
@@ -109,6 +114,9 @@ const Header = () => {
                 lacus lorem volutpat urna, sed viverra arcu odio in justo.
               </p>
             </div>
+            <div className="w-96 h-96"></div>
+            <div className="w-96 h-96"></div>
+            <div className="w-96 h-96"></div>
           </div>
           <div className="flex justify-center items-center flex-wrap gap-8 mt-12">
             <img src={netflixLogo} alt="Netflix" className="h-8" />
@@ -290,7 +298,7 @@ const Header = () => {
         <div className="flex justify-center gap-20">
           {testimonials.map((testimonial, index) => (
             <div
-              className="flex flex-row rounded-2xl border-2 border-green-400 border-opacity-0 duration-200 ease-out hover:border-opacity-100 bg-white bg-opacity-10 backdrop-blur-3xl pl-3 pt-3 shadow-lg w-96"
+              className="flex flex-row rounded-2xl border-2 border-green-400 border-opacity-0 duration-200 ease-out hover:border-opacity-100 bg-white bg-opacity-10 backdrop-blur-3xl pl-4 pt-4 shadow-lg w-96"
               key={index}
             >
               <div className="grid grid-cols-[15px_15px_15px_15px_15px_15px_15px_15px_15px_15px] grid-rows-[15px_15px_15px_15px_15px_15px_15px_15px_15px_15px]">
