@@ -32,9 +32,23 @@
 }
 
 .bg-custom {
-    background-color: black;
+    background-color: #1e1e1e;
 }
 
 .shadow-custom {
     box-shadow: 5px 5px 10px #22c25d;
+}
+
+.falling-text {
+    animation: falling-text 0.8s ease-out;
+}
+
+@keyframes falling-text {
+    from {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    to {
+        opacitity: 1;
+    }
 }
