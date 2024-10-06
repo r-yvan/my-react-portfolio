@@ -1,8 +1,14 @@
 import React from "react";
+import profile from "../assets/me.png";
 
 const Clients = () => {
+  const testimonials = [
+    { name: "John Doe", comment: "Great Developer!", image: "john-image.png" },
+    { name: "Mike Peter", comment: "Amazing work!", image: "mike-image.png" },
+  ];
+
   return (
-    <div>
+    <div className="bg-custom text-white">
       <div className="flex justify-center pt-10 z-20">
         <h2 className="text-4xl font-bold mb-20 z-20">
           <span className="text-green-400">Clients'</span> Testimonies

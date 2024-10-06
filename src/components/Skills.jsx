@@ -1,9 +1,28 @@
 import React from "react";
-import achievement from '../assets/achievement.png'
+import achievement from "../assets/achievement.png";
 
 const Skills = () => {
+  const skills = [
+    {
+      category: "Frontend",
+      list: [
+        "React JS",
+        "Vue JS",
+        "Angular JS",
+        "Tailwind CSS",
+        "Bootstrap CSS",
+        "React Native",
+      ],
+    },
+    {
+      category: "Backend",
+      list: ["Node JS", "Django", "Spring Boot", "MongoDB", "PHP"],
+    },
+    { category: "Others", list: ["Figma", "Photoshop", "Illustrator"] },
+  ];
+
   return (
-    <div className="flex flex-col items-center backdrop-blur-3xl bg-white bg-opacity-10 text-white z-20 rounded-3xl">
+    <div className="flex flex-col items-center backdrop-blur-3xl bg-custom bg-opacity-10 text-white z-20">
       <div className="flex justify-center mb-20 z-10">
         <h2 className="text-6xl font-bold text-green-400">Skills</h2>{" "}
       </div>

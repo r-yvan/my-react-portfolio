@@ -1,8 +1,24 @@
 import React from "react";
+import temp from "../assets/temp.jpg";
 
 const Projects = () => {
+  const projects = [
+    {
+      title: "React Native Project",
+      description: "Lorem ipsum dolor sit amet...",
+    },
+    {
+      title: "React Native Project",
+      description: "Lorem ipsum dolor sit amet...",
+    },
+    {
+      title: "React Native Project",
+      description: "Lorem ipsum dolor sit amet...",
+    },
+  ];
+
   return (
-    <div className="border-b-4 pb-20 pt-10 border-gray-500 border-opacity-50 z-30">
+    <div className="border-b-4 pb-20 pt-10 border-gray-500 bg-custom text-white border-opacity-50 z-30">
       <div className="flex justify-center z-20">
         <h2 className="text-4xl font-bold mb-20 z-20">
           My <span className="text-green-400">Projects</span>

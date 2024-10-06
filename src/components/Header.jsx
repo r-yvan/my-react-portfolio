@@ -1,66 +1,53 @@
 import React from "react";
-import background from "../assets/circle-scatter-haikei2.png";
+import background from "../assets/anotherBanga.png";
 import profile from "../assets/me.png";
 import netflixLogo from "../assets/netflix.png";
 import googleLogo from "../assets/google.png";
 import paypalLogo from "../assets/paypal.png";
 import skypeLogo from "../assets/skype.png";
 import amazonLogo from "../assets/amazon.png";
-import achievement from "../assets/achievement.png";
-import temp from "../assets/temp.jpg";
-import Skills from "./Skills";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useAnimation,
+} from "framer-motion";
 
 const Header = () => {
-  const skills = [
-    {
-      category: "Frontend",
-      list: [
-        "React JS",
-        "Vue JS",
-        "Angular JS",
-        "Tailwind CSS",
-        "Bootstrap CSS",
-        "React Native",
-      ],
-    },
-    {
-      category: "Backend",
-      list: ["Node JS", "Django", "Spring Boot", "MongoDB", "PHP"],
-    },
-    { category: "Others", list: ["Figma", "Photoshop", "Illustrator"] },
-  ];
+  const controls = useAnimation();
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 600], [1, 0]);
+  const scale = useTransform(scrollY, [0, 600], [1, 2]);
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+  });
 
-  const projects = [
-    {
-      title: "React Native Project",
-      description: "Lorem ipsum dolor sit amet...",
-    },
-    {
-      title: "React Native Project",
-      description: "Lorem ipsum dolor sit amet...",
-    },
-    {
-      title: "React Native Project",
-      description: "Lorem ipsum dolor sit amet...",
-    },
-  ];
-
-  const testimonials = [
-    { name: "John Doe", comment: "Great Developer!", image: "john-image.png" },
-    { name: "Mike Peter", comment: "Amazing work!", image: "mike-image.png" },
-  ];
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        y: [100, 0],
+        opacity: [0, 1],
+        transition: { duration: 1, ease: "easeOut" },
+      });
+    } else {
+      controls.stop();
+    }
+  }, [controls, inView]);
 
   return (
     <header
-      className="bg-custom text-white font-body relative overflow-hidden pb-36"
+      className="bg-custom text-white font-body relative overflow-hidden pb-10"
       style={{ minHeight: "100vh" }}
     >
-      <img
+      <motion.img
         src={background}
         alt="background"
-        className="absolute top-0 left-0 w-full h-full object-cover opacity-60 blur-3xl z-0"
+        style={{ opacity: opacity, scale: scale }}
+        className="absolute top-0 left-0 w-full h-full rotate-180 object-cover rounded-b-3xl opacity-90 blur-3xl z-0"
       />
-      <nav className="absolute top-0 left-0 right-0 p-5 z-10 falling-text">
+      <nav className="absolute top-0 left-0 right-0 p-5 z-10">
         <ul className="flex justify-center items-center space-x-6 text-lg">
           <li className="font-light duration-200 ease-out hover:text-green-400">
             Home
@@ -81,9 +68,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div className="border-b-4 border-gray-500 pb-20 ">
-        <div className="flex flex-col relative px-4 py-20 z-10">
-          <div className="flex flex-row justify-center gap-10 mt-24 falling-text">
+      <motion.div className="" ref={ref} animate={controls}>
+        <div className="flex flex-col relative px-4 pt-20 pb-10 z-10">
+          <div className="flex flex-row justify-center gap-10 mt-20">
             <div className="w-96 h-96"></div>
             <div className="w-96 h-96"></div>
             <div className="w-96 h-96"></div>
@@ -118,7 +105,7 @@ const Header = () => {
             <div className="w-96 h-96"></div>
             <div className="w-96 h-96"></div>
           </div>
-          <div className="flex justify-center items-center flex-wrap gap-8 mt-12 falling-text">
+          <div className="flex justify-center items-center flex-wrap gap-8 falling-text">
             <img src={netflixLogo} alt="Netflix" className="h-8" />
             <img src={googleLogo} alt="Google" className="h-8" />
             <img src={paypalLogo} alt="PayPal" className="h-8" />
@@ -148,7 +135,7 @@ const Header = () => {
             Connect
           </button>
         </div>
-      </div>
+      </motion.div>
     </header>
   );
 };
