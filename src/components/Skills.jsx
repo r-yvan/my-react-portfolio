@@ -1,30 +1,49 @@
 import React from "react";
 import achievement from "../assets/achievement.png";
+import chakra from "../assets/chakra.png"
+import angular from "../assets/angular.png"
+import node from "../assets/node.png"
+import tailwindcss from "../assets/tailwindcss.png"
+import chakra from "../assets/chakra.png"
 
 const Skills = () => {
   const skills = [
     {
       category: "Frontend",
-      list: [
+      list: {
+        language: "Chakra UI", img: {chakra},
         "React JS",
         "Vue JS",
         "Angular JS",
         "Tailwind CSS",
         "Bootstrap CSS",
         "React Native",
-      ],
+        "Bulma",
+      },
     },
     {
       category: "Backend",
-      list: ["Node JS", "Django", "Spring Boot", "MongoDB", "PHP"],
+      list: [
+        "Node JS",
+        "Django",
+        "Spring Boot",
+        "MongoDB",
+        "PHP",
+        "Laravel",
+        "Spring",
+        "MySQL",
+      ],
     },
-    { category: "Others", list: ["Figma", "Photoshop", "Illustrator"] },
+    {
+      category: "Others",
+      list: ["Figma", "Photoshop", "Illustrator", "Canva"],
+    },
   ];
 
   return (
     <div className="flex flex-col items-center backdrop-blur-3xl bg-custom bg-opacity-10 text-white z-20">
-      <div className="flex justify-center mb-20 z-10">
-        <h2 className="text-6xl font-bold text-green-400">Skills</h2>{" "}
+      <div className="flex justify-center mb-10 z-10">
+        <h2 className="text-6xl font-bold text-green-400">Skills</h2>
       </div>
       <div className="flex flex-row justify-center gap-10">
         {skills.map((skill) => (
