@@ -1,37 +1,43 @@
 import React from "react";
 import achievement from "../assets/achievement.png";
-import chakra from "../assets/chakra.png"
-import angular from "../assets/angular.png"
-import node from "../assets/node.png"
-import tailwindcss from "../assets/tailwindcss.png"
-import chakra from "../assets/chakra.png"
+import chakra from "../assets/chakra.png";
+import angular from "../assets/angular.png";
+import node from "../assets/node.png";
+import tailwindcss from "../assets/tailwindcss.png";
+import bulma from "../assets/bulma.png";
+import figma from "../assets/figma.png";
+import bootstrap from "../assets/bootstrap.png";
+import illustrator from "../assets/illustrator.png";
+import laravel from "../assets/laravel.png";
+import django from "../assets/django.png";
+import vue from "../assets/vue.png";
+import photoshop from "../assets/photoshop.png";
+import canva from "../assets/canva.png";
 
 const Skills = () => {
   const skills = [
     {
       category: "Frontend",
-      list: {
-        language: "Chakra UI", img: {chakra},
-        "React JS",
-        "Vue JS",
-        "Angular JS",
-        "Tailwind CSS",
-        "Bootstrap CSS",
-        "React Native",
-        "Bulma",
-      },
+      list: [
+        { language: "Chakra UI", img: chakra },
+        { language: "Angular JS", img: angular },
+        { language: "Vue JS", img: vue },
+        { language: "Bootstrap", img: bootstrap },
+        { language: "Bulma", img: bulma },
+        { language: "Tailwindcss", img: tailwindcss },
+        { language: "Chakra UI", img: chakra },
+      ],
     },
     {
       category: "Backend",
       list: [
-        "Node JS",
-        "Django",
-        "Spring Boot",
-        "MongoDB",
-        "PHP",
-        "Laravel",
-        "Spring",
-        "MySQL",
+        { language: "PHP", img: php },
+        { language: "Angular JS", img: angular },
+        { language: "Vue JS", img: vue },
+        { language: "Bootstrap", img: bootstrap },
+        { language: "Bulma", img: bulma },
+        { language: "Tailwindcss", img: tailwindcss },
+        { language: "Chakra UI", img: chakra },
       ],
     },
     {
@@ -46,24 +52,36 @@ const Skills = () => {
         <h2 className="text-6xl font-bold text-green-400">Skills</h2>
       </div>
       <div className="flex flex-row justify-center gap-10">
-        {skills.map((skill) => (
-          <div className="flex flex-col w-80 h-96 overflow-y-auto for-scrollbar bg-white bg-opacity-10 backdrop-blur-2xl p-2 border-2 border-white border-opacity-10 rounded-2xl">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="flex flex-col w-80 h-96 overflow-y-auto for-scrollbar bg-white bg-opacity-10 backdrop-blur-2xl p-2 border-2 border-white border-opacity-10 rounded-2xl"
+          >
             <div className="flex justify-center font-bold text-3xl mt-2 mb-5">
               <h1>{skill.category}</h1>
             </div>
             <div className="flex flex-col">
-              {skill.list.map((listSkill) => (
-                <div className="py-2 px-2 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1">
+              {skill.list.map((listSkill, listIndex) => (
+                <div
+                  key={listIndex}
+                  className="py-2 px-2 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1"
+                >
                   <div className="flex flex-row pl-1 items-center">
                     <div className="flex flex-row items-center">
-                      <div>
+                      {listSkill.img ? (
                         <img
-                          src={achievement}
-                          alt="achievement"
+                          src={listSkill.img}
+                          alt={listSkill.language}
                           className="w-8"
                         />
-                      </div>
-                      <div className="pl-3">{listSkill}</div>
+                      ) : (
+                        <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
+                          {" "}
+                          {/* Placeholder for missing image */}
+                          <span className="text-gray-600">No Image</span>
+                        </div>
+                      )}
+                      <div className="pl-3">{listSkill.language}</div>
                     </div>
                     <div></div>
                   </div>
