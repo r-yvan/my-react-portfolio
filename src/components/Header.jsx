@@ -77,7 +77,7 @@ const Header = () => {
             <div className="grid grid-cols-[35px_35px_35px_35px_35px_35px_35px_35px_35px_35px_35px] grid-rows-[35px_35px_35px_35px_35px_35px_35px_35px_35px_35px_35px] z-20">
               <div className="w-72 h-72 bg-green-400 rounded-2xl row-start-1 col-start-3"></div>
               <div className="w-72 h-72 border-white border-4 rounded-2xl ml-5 mt-5"></div>
-              <div className="w-72 h-72 col-start-2 row-start-2 overflow-hidden rounded-2xl z-20">
+              <div className="w-72 h-72 col-start-2 row-start-2 overflow-hidden rounded-2xl z-20 duration-1000 ease-out hover:mr-12 hover:mt-10">
                 <img className="" src={profile} alt="Rubuto Yvan" />
               </div>
             </div>
