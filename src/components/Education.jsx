@@ -111,7 +111,7 @@ const Education = () => {
         {/* Grid Item 1 */}
         <motion.div
           animate={bulletsReveal1} // Use individual animation controls
-          className="col-start-2 row-end-2 flex flex-row items-center p-8 duration-200 border-2 border-green-400 border-opacity-0 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg rounded-2xl hover:scale-95 hover:drop-shadow-2xl hover:shadow-green-400 hover:shadow-2xl hover:border-green-400 hover:border-opacity-100"
+          className="col-start-2 row-end-2 flex flex-row items-center p-8 duration-200 border-2 border-green-400 border-opacity-0 ease-out hover:bg-white hover:bg-opacity-10 hover:backdrop-blur-lg rounded-2xl hover:scale-95 hover:border-green-400 hover:border-opacity-100"
         >
           <div>
             <img src={achievement} alt="" />
