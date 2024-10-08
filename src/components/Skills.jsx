@@ -1,5 +1,4 @@
 import React from "react";
-import achievement from "../assets/achievement.png";
 import chakra from "../assets/chakra.png";
 import angular from "../assets/angular.png";
 import node from "../assets/node.png";
@@ -13,36 +12,38 @@ import django from "../assets/django.png";
 import vue from "../assets/vue.png";
 import photoshop from "../assets/photoshop.png";
 import canva from "../assets/canva.png";
+import react from "../assets/achievement.png";
 
 const Skills = () => {
   const skills = [
     {
       category: "Frontend",
       list: [
-        { language: "Chakra UI", img: chakra },
-        { language: "Angular JS", img: angular },
+        { language: "React JS", img: react },
         { language: "Vue JS", img: vue },
+        { language: "Angular JS", img: angular },
+        { language: "Tailwindcss", img: tailwindcss },
         { language: "Bootstrap", img: bootstrap },
         { language: "Bulma", img: bulma },
-        { language: "Tailwindcss", img: tailwindcss },
         { language: "Chakra UI", img: chakra },
       ],
     },
     {
       category: "Backend",
       list: [
-        { language: "PHP", img: php },
-        { language: "Angular JS", img: angular },
-        { language: "Vue JS", img: vue },
-        { language: "Bootstrap", img: bootstrap },
-        { language: "Bulma", img: bulma },
-        { language: "Tailwindcss", img: tailwindcss },
-        { language: "Chakra UI", img: chakra },
+        { language: "Node JS", img: node },
+        { language: "Django", img: django },
+        { language: "Laravel", img: laravel },
       ],
     },
     {
       category: "Others",
-      list: ["Figma", "Photoshop", "Illustrator", "Canva"],
+      list: [
+        { language: "Figma", img: figma },
+        { language: "Photoshop", img: photoshop },
+        { language: "Illustrator", img: illustrator },
+        { language: "Canva", img: canva },
+      ],
     },
   ];
 
@@ -64,7 +65,7 @@ const Skills = () => {
               {skill.list.map((listSkill, listIndex) => (
                 <div
                   key={listIndex}
-                  className="py-2 px-2 rounded-2xl hover:backdrop-blur-3xl hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1"
+                  className="py-2 px-2 rounded-2xl hover:backdrop-blur-3xl duration-200 easeout hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1"
                 >
                   <div className="flex flex-row pl-1 items-center">
                     <div className="flex flex-row items-center">
@@ -76,8 +77,6 @@ const Skills = () => {
                         />
                       ) : (
                         <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
-                          {" "}
-                          {/* Placeholder for missing image */}
                           <span className="text-gray-600">No Image</span>
                         </div>
                       )}
