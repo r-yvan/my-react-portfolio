@@ -4,16 +4,34 @@ import temp from "../assets/temp.jpg";
 const Projects = () => {
   const projects = [
     {
-      title: "React Native Project",
-      description: "Lorem ipsum dolor sit amet...",
+      title: "React To Do App",
+      description: "Simple Project to exercise react js development..",
+      img: {},
     },
     {
-      title: "React Native Project",
-      description: "Lorem ipsum dolor sit amet...",
+      title: "Youtube Clone",
+      description: "Simply a Youtube Clone with functionalities like those of Youtube..",
+      img: {},
     },
     {
-      title: "React Native Project",
-      description: "Lorem ipsum dolor sit amet...",
+      title: "Novium Tech Informer",
+      description: "Website that provide real time information about the outside tech gadgets..",
+      img: {},
+    },
+    {
+      title: "React To Do App",
+      description: "Simple Project to exercise react js development..",
+      img: {},
+    },
+    {
+      title: "Youtube Clone",
+      description: "Simply a Youtube Clone with functionalities like those of Youtube..",
+      img: {},
+    },
+    {
+      title: "Novium Tech Informer",
+      description: "Website that provide real time information about the outside tech gadgets..",
+      img: {},
     },
   ];
 
@@ -24,19 +42,19 @@ const Projects = () => {
           My <span className="text-green-400">Projects</span>
         </h2>
       </div>
-      <div className="flex flex-row justify-center gap-10 start-2 z-20">
+      <div className="flex flex-row overflow-x-auto justify-center for-scrollbar gap-10 start-2 z-20">
         {projects.map((project, index) => (
           <div
-            className="flex flex-col basis-80 bg-white bg-opacity-10 backdrop-blur-3xl border-2 border-white border-opacity-10 duration-200 ease-out hover:scale-95 hover:shadow-custom hover:border-green-400 hover:border-opacity-100 rounded-2xl p-2 z-20"
+            className="flex flex-col overflow-y-auto basis-80 flex-shrink-0 for-scrollbar bg-white bg-opacity-10 backdrop-blur-3xl border-2 border-white border-opacity-10 duration-200 ease-out hover:scale-95 hover:shadow-custom hover:border-green-400 hover:border-opacity-100 rounded-2xl p-2 z-20"
             key={index}
           >
             <div className="w-full rounded-xl overflow-hidden mb-4">
               <img src={temp} alt="" />
             </div>
-            <div className="flex flex-col pl-3 border-l-4 border-green-400">
+            <div className="flex flex-col h-32 pl-3 border-l-4 border-green-400">
               <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
               <p className="text-gray-400">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+                {project.description}
               </p>
             </div>
           </div>
