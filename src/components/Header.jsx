@@ -5,6 +5,7 @@ import netflixLogo from "../assets/netflix.png";
 import googleLogo from "../assets/google.png";
 import paypalLogo from "../assets/paypal.png";
 import skypeLogo from "../assets/skype.png";
+
 import amazonLogo from "../assets/amazon.png";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
