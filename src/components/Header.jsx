@@ -8,12 +8,7 @@ import skypeLogo from "../assets/skype.png";
 import amazonLogo from "../assets/amazon.png";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useAnimation,
-} from "framer-motion";
+import { motion, useScroll, useTransform, useAnimation } from "framer-motion";
 
 const Header = () => {
   const controls = useAnimation();
@@ -45,7 +40,7 @@ const Header = () => {
         src={background}
         alt="background"
         style={{ opacity: opacity, scale: scale }}
-        className="absolute top-0 left-0 w-full h-full rotate-180 object-cover rounded-b-3xl opacity-90 blur-3xl z-0"
+        className="absolute w-full h-full rotate-180 object-cover rounded-b-3xl opacity-90 blur-3xl z-0"
       />
       <nav className="absolute top-0 left-0 right-0 p-5 z-10">
         <ul className="flex justify-center items-center space-x-6 text-lg">
@@ -68,7 +63,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <motion.div className="" ref={ref} animate={controls}>
+      <div className="" ref={ref} animate={controls}>
         <div className="flex flex-col relative px-4 pt-20 pb-10 z-10">
           <div className="flex flex-row justify-center gap-10 mt-20">
             <div className="w-96 h-96"></div>
@@ -114,18 +109,18 @@ const Header = () => {
           </div>
         </div>
         <div className="flex flex-row justify-center gap-8 falling-text">
-          <div className="flex justify-center items-center flex-col w-56 border-2 border-gray-400 px-4 py-4 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl">
+          <div className="flex justify-center items-center flex-col w-56 border-2 border-gray-400 px-4 py-4 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl duration-200 hover:scale-95 hover:border-green-400">
             <h1 className="text-7xl items-center text-green-400">1+</h1>
             <p className="opacity-70 font-light pt-3">Years</p>
             <p>Experience</p>
           </div>
-          <div className="flex justify-center flex-col items-center w-56 border-2 px-10 py-10 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl border-1 border-gray-400">
+          <div className="flex justify-center flex-col items-center w-56 border-2 px-10 py-10 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl border-1 border-gray-400 duration-200 hover:scale-95 hover:border-green-400">
             <h1 className="text-7xl items-center text-green-400">21+</h1>
             <p className="opacity-70 font-light pt-3">Github</p>
             <p className="font-bold">Repositories</p>
           </div>
-          <div className="flex justify-center flex-col items-center w-56 border-2 border-gray-400 px-4 py-4 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl">
-            <h1 className="text-7xl text-green-400">11+</h1>
+          <div className="flex justify-center flex-col items-center w-56 border-2 px-10 py-10 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl border-1 border-gray-400 duration-200 hover:scale-95 hover:border-green-400">
+            <h1 className="text-7xl items-center text-green-400">71+</h1>
             <p className="opacity-70 font-light pt-3">Friendly</p>
             <p className="font-bold">Connections</p>
           </div>
@@ -135,7 +130,7 @@ const Header = () => {
             Connect
           </button>
         </div>
-      </motion.div>
+      </div>
     </header>
   );
 };

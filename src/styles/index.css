@@ -42,3 +42,8 @@
 .for-scrollbar {
     scrollbar-width: none;
 }
+
+.bg-yindi {
+    background-image: url("../assets/anotherBanga.png");
+    filter: blur(10px);
+}

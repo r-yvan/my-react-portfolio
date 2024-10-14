@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import achievement from "../assets/achievement.png";
+import background from "../assets/anotherBanga.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -90,8 +91,7 @@ const Education = () => {
   ]);
 
   return (
-    <div className="flex flex-col justify-center bg-custom text-white pt-10 pb-24">
-      {/* Title Section */}
+    <div className="flex flex-col justify-center bg-custom text-white pt-10 pb-10">
       <motion.div
         animate={onScrollReveal}
         ref={ref}
