@@ -7,10 +7,12 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Clients from "./Clients";
 import "../styles/index.css";
+import ParticlesBackground from "./ParticlesBackground";
 
 const App = () => {
   return (
     <div className="overflow-x-hidden font-body">
+      <ParticlesBackground/>
       <Header />
       <About />
       <Education />

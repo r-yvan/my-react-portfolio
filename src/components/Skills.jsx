@@ -52,20 +52,20 @@ const Skills = () => {
       <div className="flex justify-center mb-10 z-10">
         <h2 className="text-6xl font-bold text-green-400">Skills</h2>
       </div>
-      <div className="flex flex-row justify-center gap-10">
+      <div className="flex flex-row justify-center gap-5">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col w-80 h-96 overflow-y-auto for-scrollbar bg-white bg-opacity-10 backdrop-blur-2xl p-2 border-2 border-white border-opacity-10 rounded-2xl"
+            className="flex flex-col w-card h-96 overflow-y-auto for-scrollbar bg-white bg-opacity-10 backdrop-blur-2xl p-2  rounded-xl"
           >
             <div className="flex justify-center font-bold text-3xl mt-2 mb-5">
-              <h1>{skill.category}</h1>
+              <h1 className="before:contents-[''] before:absolute before:w-20 before:h-1 before:bg-green-400 before:top-12 before:rounded-full">{skill.category}</h1>
             </div>
             <div className="flex flex-col">
               {skill.list.map((listSkill, listIndex) => (
                 <div
                   key={listIndex}
-                  className="py-2 px-2 rounded-2xl hover:backdrop-blur-3xl duration-200 easeout hover:bg-white hover:bg-opacity-10 border-2 border-opacity-0 hover:border-opacity-100 border-green-400 m-1"
+                  className="py-3 px-2 rounded-xl hover:backdrop-blur-3xl duration-200 easeout hover:bg-white hover:bg-opacity-10 border border-opacity-0 hover:border-opacity-100 border-green-400 m-1"
                 >
                   <div className="flex flex-row pl-1 items-center">
                     <div className="flex flex-row items-center">

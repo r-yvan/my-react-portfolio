@@ -1,33 +1,31 @@
 import React, { useEffect, useRef } from "react";
-import { motion, useAnimation } from "framer-motion"; // Import framer-motion // Import useInView
+import { motion, useAnimation } from "framer-motion"; 
 import profile from "../assets/me.png";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
-  const controls = useAnimation(); // Initialize animation controls
+  const controls = useAnimation();
   const [ref, inView] = useInView({
-    threshold: 0.2, // Trigger when 20% of the component is in view
+    threshold: 0.2,
   });
 
   useEffect(() => {
     if (inView) {
-      // When the component is in view, start the animation
       controls.start({
-        y: 0, // Move to original position
-        opacity: 1, // Full opacity
+        y: 0,
+        opacity: 1,
         transition: {
-          duration: 0.8, // Duration of the animation
-          ease: "easeOut", // Easing function
+          duration: 0.8,
+          ease: "easeOut", 
         },
       });
     } else {
-      // Reset to initial state when not in view
       controls.start({
-        y: 50, // Move down
-        opacity: 0, // Fade out
+        y: 50,
+        opacity: 0, 
         transition: {
-          duration: 0.5, // Duration of the exit animation
-          ease: "easeIn", // Easing function for exit
+          duration: 0.5, 
+          ease: "easeIn",
         },
       });
     }
@@ -37,16 +35,16 @@ const About = () => {
     <div className="flex flex-col justify-center bg-custom text-white pt-10">
       <div className="flex justify-center z-10 mb-20">
         <motion.h2
-          initial={{ y: 50, opacity: 0 }} // Initial state for animation
-          animate={controls} // Bind the controls to this component
+          initial={{ y: 50, opacity: 0 }} 
+          animate={controls} 
           className="text-6xl font-bold"
         >
           About <span className="text-green-400">Me</span>
         </motion.h2>
       </div>
       <motion.div
-        ref={ref} // Attach the ref to this element
-        initial={{ y: 50, opacity: 0 }} // Initial state for animation
+        ref={ref} 
+        initial={{ y: 50, opacity: 0 }} 
         animate={controls} // Bind the controls to this component
         className="grid grid-cols-12 grid-rows-1 gap-12"
       >

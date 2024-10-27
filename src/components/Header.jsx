@@ -1,6 +1,6 @@
 import React from "react";
-import background from "../assets/anotherBanga.png";
-import profile from "../assets/me.png";
+import background from "../assets/BackgroundImage.png";
+import profile from "../assets/anotherMe.png";
 import netflixLogo from "../assets/netflix.png";
 import googleLogo from "../assets/google.png";
 import paypalLogo from "../assets/paypal.png";
@@ -33,38 +33,30 @@ const Header = () => {
 
   return (
     <header
-      className="bg-custom text-white font-body relative overflow-hidden pb-10"
+      className="text-white bg-custom bg-cover bg-center font-body pb-10 pt-6"
       style={{ minHeight: "100vh" }}
     >
-      <motion.img
-        src={background}
-        alt="background"
-        style={{ opacity: opacity, scale: scale }}
-        className="absolute w-full h-full rotate-180 object-cover rounded-b-3xl opacity-90 blur-3xl z-0"
-      />
-      <nav className="absolute top-0 left-0 right-0 p-5 z-10">
-        <ul className="flex justify-center items-center space-x-6 text-lg">
-          <li className="font-light duration-200 ease-out hover:text-green-400">
-            Home
-          </li>
-          <li className="font-light duration-200 ease-out hover:text-green-400">
-            About Me
-          </li>
-          <li className="font-light duration-200 ease-out hover:text-green-400">
-            Education
-          </li>
-          <li className="font-light duration-200 ease-out hover:text-green-400">
-            Skills
-          </li>
-          <li>
-            <p className="font-light hover:text-green-400" href="">
+      <div className="flex justify-center items-center">
+        <nav className="fixed py-2 z-50 bg-white bg-opacity-10 mt-2 rounded-full w-fit backdrop-blur-3xl px-10 border border-green-400 border-opacity-30">
+          <ul className="flex justify-center items-center space-x-12">
+            <li className="duration-300 ease-out hover:text-green-400">Home</li>
+            <li className="duration-300 ease-out hover:text-green-400">
+              About Me
+            </li>
+            <li className="duration-300 ease-out hover:text-green-400">
+              Education
+            </li>
+            <li className="duration-300 ease-out hover:text-green-400">
+              Skills
+            </li>
+            <li className="duration-300 ease-out hover:text-green-400">
               Projects
-            </p>
-          </li>
-        </ul>
-      </nav>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div className="" ref={ref} animate={controls}>
-        <div className="flex flex-col relative px-4 pt-20 pb-10 z-10">
+        <div className="flex flex-col relative px-4 pt-10 pb-10 z-10">
           <div className="flex flex-row justify-center gap-10 mt-20">
             <div className="w-96 h-96"></div>
             <div className="w-96 h-96"></div>
@@ -72,7 +64,7 @@ const Header = () => {
             <div className="grid grid-cols-[35px_35px_35px_35px_35px_35px_35px_35px_35px_35px_35px] grid-rows-[35px_35px_35px_35px_35px_35px_35px_35px_35px_35px_35px] z-20">
               <div className="w-72 h-72 bg-green-400 rounded-2xl row-start-1 col-start-3"></div>
               <div className="w-72 h-72 border-white border-4 rounded-2xl ml-5 mt-5"></div>
-              <div className="w-72 h-72 col-start-2 row-start-2 overflow-hidden rounded-2xl z-20 duration-1000 ease-out hover:mr-12 hover:mt-10">
+              <div className="w-[300px] h-[300px] col-start-2 row-start-2 overflow-hidden rounded-3xl z-20 duration-1000 ease-out">
                 <img className="" src={profile} alt="Rubuto Yvan" />
               </div>
             </div>
@@ -108,25 +100,25 @@ const Header = () => {
             <img src={amazonLogo} alt="Amazon" className="h-8" />
           </div>
         </div>
-        <div className="flex flex-row justify-center gap-8 falling-text">
-          <div className="flex justify-center items-center flex-col w-56 border-2 border-gray-400 px-4 py-4 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl duration-200 hover:scale-95 hover:border-green-400">
-            <h1 className="text-7xl items-center text-green-400">1+</h1>
+        <div className="flex flex-row justify-center gap-5 falling-text">
+          <div className="flex justify-center items-center flex-col w-52 h-52 border border-gray-400 px-5 py-5 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl duration-200 hover:scale-95 hover:border-green-400">
+            <h1 className="text-6xl items-center text-green-400">1+</h1>
             <p className="opacity-70 font-light pt-3">Years</p>
             <p>Experience</p>
           </div>
-          <div className="flex justify-center flex-col items-center w-56 border-2 px-10 py-10 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl border-1 border-gray-400 duration-200 hover:scale-95 hover:border-green-400">
-            <h1 className="text-7xl items-center text-green-400">21+</h1>
+          <div className="flex justify-center flex-col items-center w-52 h-52 border px-5 py-5 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl border-gray-400 duration-200 hover:scale-95 hover:border-green-400">
+            <h1 className="text-6xl items-center text-green-400">21+</h1>
             <p className="opacity-70 font-light pt-3">Github</p>
             <p className="font-bold">Repositories</p>
           </div>
-          <div className="flex justify-center flex-col items-center w-56 border-2 px-10 py-10 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl border-1 border-gray-400 duration-200 hover:scale-95 hover:border-green-400">
-            <h1 className="text-7xl items-center text-green-400">71+</h1>
+          <div className="flex justify-center flex-col items-center w-52 h-52 border px-5 py-5 bg-white bg-opacity-15 backdrop-filter backdrop-blur-3xl rounded-2xl border-gray-400 duration-200 hover:scale-95 hover:border-green-400">
+            <h1 className="text-6xl items-center text-green-400">71+</h1>
             <p className="opacity-70 font-light pt-3">Friendly</p>
             <p className="font-bold">Connections</p>
           </div>
         </div>
         <div className="flex justify-center mt-10">
-          <button className="px-36 py-3 rounded-full border-2 border-white border-opacity-30 z-10 font-bold duration-200 ease-out hover:bg-white hover:bg-opacity-20 hover:border-green-400 ">
+          <button className="px-28 py-2 rounded-full border-2 border-white border-opacity-30 z-10 font-bold duration-200 ease-out bg-green-400">
             Connect
           </button>
         </div>

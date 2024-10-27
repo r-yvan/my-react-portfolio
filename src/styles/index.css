@@ -47,3 +47,11 @@
     background-image: url("../assets/anotherBanga.png");
     filter: blur(10px);
 }
+
+.w-card {
+    width: 26rem;
+}
+
+.w-f {
+    width: 3px;
+}
