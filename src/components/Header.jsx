@@ -69,7 +69,7 @@ const Header = () => {
                 <img className="" src={profile} alt="Rubuto Yvan" />
               </div>
             </div>
-            <div className="">
+            <div className="pb-14">
               <h5 className="text-2xl font-bold">
                 <a href="https://git.io/typing-svg">
                   <img
@@ -88,6 +88,9 @@ const Header = () => {
                 eros tincidunt in. Donec sodales, metus ac varius lobortis,
                 lacus lorem volutpat urna, sed viverra arcu odio in justo.
               </p>
+              <button className="ml-36 mt-10 px-14 py-2 rounded-full border-2 border-white border-opacity-30 z-10 font-bold duration-200 ease-out bg-green-400">
+                Connect
+              </button>
             </div>
             <div className="w-96 h-96"></div>
             <div className="w-96 h-96"></div>
@@ -117,11 +120,6 @@ const Header = () => {
             <p className="opacity-70 font-light pt-3">Friendly</p>
             <p className="font-bold">Connections</p>
           </div>
-        </div>
-        <div className="flex justify-center mt-10">
-          <button className="px-28 py-2 rounded-full border-2 border-white border-opacity-30 z-10 font-bold duration-200 ease-out bg-green-400">
-            Connect
-          </button>
         </div>
       </div>
     </header>
