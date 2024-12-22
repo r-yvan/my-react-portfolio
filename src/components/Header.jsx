@@ -5,7 +5,6 @@ import netflixLogo from "../assets/netflix.png";
 import googleLogo from "../assets/google.png";
 import paypalLogo from "../assets/paypal.png";
 import skypeLogo from "../assets/skype.png";
-
 import amazonLogo from "../assets/amazon.png";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
@@ -34,7 +33,7 @@ const Header = () => {
 
   return (
     <header
-      className="text-white bg-custom bg-cover bg-center font-body pb-10 pt-6"
+      className="text-white bg-custom bg-cover bg-center font-body pt-6 pb-10"
       style={{ minHeight: "100vh" }}
     >
       <div className="flex justify-center items-center">
